@@ -13,8 +13,9 @@ let stream = fs.createReadStream(program.list)
 
 stream
   .on('data', function (data) {
-    let n = data[0];
+    let n = data[1];
     let k = data[1];
-    console.log(n, k);
+    let nInt = parseInt(n);
+    console.log(nInt, k);
   });
 
