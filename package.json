@@ -1,0 +1,25 @@
+{
+  "name": "sas",
+  "version": "0.0.1",
+  "description": "sample app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TraceWright/Node-Console-App.git"
+  },
+  "author": "Tracey Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TraceWright/Node-Console-App/issues"
+  },
+  "homepage": "https://github.com/TraceWright/Node-Console-App#readme",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "csv": "^1.1.1",
+    "inquirer": "^3.2.2",
+    "line-input-stream": "^1.0.1"
+  }
+}
