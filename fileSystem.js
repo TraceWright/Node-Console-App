@@ -25,6 +25,7 @@ fs.readFile('input/carpark-input.txt', function (err, data) {
         let guardCarpark2 = carparks[nParks - 1].available = false;
 
         let count = 1;
+
 while (count < nParks) {
     loopR(carparks, count);
     loopL(carparks, count);
@@ -32,7 +33,7 @@ while (count < nParks) {
 }
 
 calculateMaxSp(carparks);
-// selectCarpark(carparks);
+selectCarpark(carparks);
 
 console.log(carparks)
  });
@@ -72,12 +73,14 @@ function calculateMaxSp(carparks, nParks) {
 }
 
 function selectCarpark(carparks, nParks) {
+    let max;
     for (i = 0; i < nParks; i++) {
         if (carparks[i].maxSp > carparks[i + 1]) {
             max = carparks[i + 1];
         }
 
     }
+    return max;
 }
 
 
