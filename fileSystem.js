@@ -27,7 +27,7 @@ fs.readFile('input/carpark-input.txt', function (err, data) {
         let count = 1;
 while (count < nParks) {
     loopR(carparks, count);
-    loopL(carparks, count, decrement);
+    loopL(carparks, count);
     count++
 }
 
@@ -44,14 +44,13 @@ console.log(carparks)
     return carparks[c].RS = count;
 }
 
-function loopL(carparks, c, dec) {
+function loopL(carparks, c) {
     let count = 0;
     //carparks[4].available = false;
    for (i = c; carparks[i].available == true; i-- ) {
        count++  
    }
    let x =carparks[c].LS = count;
-   console.log(carparks[c].LS)
    return x;
 }
 
