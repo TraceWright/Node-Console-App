@@ -35,7 +35,7 @@ while (count < nParks) {
 calculateMaxSp(carparks);
 selectCarpark(carparks);
 
-console.log(carparks)
+//console.log(carparks)
  });
 
 // determine how many carparks to the right
@@ -59,16 +59,17 @@ function loopL(carparks, c) {
 }
 
 function calculateMaxSp(carparks, nParks) {
-    for (i = 0; i < nParks -1; i++) {
+    let n = nParks-1;
+    for (i = 0; i < n; i++) {
         
         
-        // console.log(carparks[i].LS)
-        // console.log(maxSpace)
+        console.log(carparks[i].LS.value)
         
         let maxSpace = carparks[i].LS + carparks[i].RS;
+        console.log(maxSpace)
         carparks[i].maxSp = maxSpace;
     }
-    console.log(carparks);
+    //console.log(carparks);
     return;
 }
 
