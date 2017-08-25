@@ -32,7 +32,7 @@ while (count < nParks) {
     count++
 }
 
-calculateMaxSp(carparks);
+calculateMaxSp(carparks, nParks);
 selectCarpark(carparks);
 
 //console.log(carparks)
@@ -59,8 +59,7 @@ function loopL(carparks, c) {
 }
 
 function calculateMaxSp(carparks, nParks) {
-    let n = nParks-1;
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < nParks; i++) {
         
         
         console.log(carparks[i].LS.value)
